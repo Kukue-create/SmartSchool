@@ -1,0 +1,191 @@
+/* SmartSchool Zimbabwe - Seke 1 High School
+   Palette: dark brown, yellow, light green (as specified in the brief) */
+:root {
+  --ssz-brown: #3b2314;
+  --ssz-brown-dark: #241408;
+  --ssz-brown-soft: #5a3a22;
+  --ssz-yellow: #f2b705;
+  --ssz-yellow-soft: #ffe082;
+  --ssz-green: #a8d5ba;
+  --ssz-green-dark: #4f9d69;
+  --ssz-cream: #fdf6e9;
+  --ssz-text: #2b1c10;
+}
+
+body {
+  background-color: var(--ssz-cream);
+  color: var(--ssz-text);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar-ssz {
+  background: linear-gradient(120deg, var(--ssz-brown) 0%, var(--ssz-brown-dark) 100%);
+  border-bottom: 4px solid var(--ssz-yellow);
+}
+.navbar-ssz .navbar-brand, .navbar-ssz .nav-link {
+  color: var(--ssz-yellow-soft) !important;
+  font-weight: 600;
+}
+.navbar-ssz .nav-link:hover {
+  color: var(--ssz-yellow) !important;
+}
+.navbar-ssz .navbar-brand small {
+  display: block;
+  color: var(--ssz-green);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.hero-ssz {
+  background: radial-gradient(circle at top right, var(--ssz-brown-soft), var(--ssz-brown-dark));
+  color: var(--ssz-yellow-soft);
+  border-radius: 0 0 2rem 2rem;
+  padding: 4rem 0 3rem;
+}
+.hero-ssz .badge-role {
+  background: var(--ssz-green-dark);
+  color: #fff;
+}
+
+.card-ssz {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(43, 28, 16, 0.12);
+  border-top: 6px solid var(--ssz-yellow);
+  background: #fff;
+}
+.card-ssz .card-header {
+  background: var(--ssz-green);
+  color: var(--ssz-brown-dark);
+  border-radius: 1rem 1rem 0 0 !important;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.btn-ssz-primary {
+  background-color: var(--ssz-brown);
+  border-color: var(--ssz-brown);
+  color: var(--ssz-yellow-soft);
+  font-weight: 600;
+}
+.btn-ssz-primary:hover {
+  background-color: var(--ssz-brown-dark);
+  border-color: var(--ssz-brown-dark);
+  color: var(--ssz-yellow);
+}
+.btn-ssz-accent {
+  background-color: var(--ssz-yellow);
+  border-color: var(--ssz-yellow);
+  color: var(--ssz-brown-dark);
+  font-weight: 700;
+}
+.btn-ssz-accent:hover {
+  background-color: #d9a200;
+  border-color: #d9a200;
+}
+.btn-ssz-green {
+  background-color: var(--ssz-green-dark);
+  border-color: var(--ssz-green-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.role-choice {
+  border: 2px solid var(--ssz-green);
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  background: #fff;
+}
+.role-choice:hover {
+  border-color: var(--ssz-yellow);
+  transform: translateY(-2px);
+}
+input[type="radio"]:checked + .role-choice-label .role-choice,
+.role-choice.active {
+  border-color: var(--ssz-yellow);
+  background: var(--ssz-yellow-soft);
+}
+
+.footer-ssz {
+  background: var(--ssz-brown-dark);
+  color: var(--ssz-green);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+.footer-ssz .text-ssz-footer-link {
+  color: var(--ssz-yellow-soft);
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-ssz .text-ssz-footer-link:hover {
+  color: var(--ssz-yellow);
+  text-decoration: underline;
+}
+
+.table-ssz thead {
+  background: var(--ssz-brown);
+  color: var(--ssz-yellow-soft);
+}
+
+.email-preview {
+  background: var(--ssz-green);
+  border: 1px dashed var(--ssz-brown);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  color: var(--ssz-brown-dark);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.pill-ssz {
+  background: var(--ssz-yellow-soft);
+  color: var(--ssz-brown-dark);
+  border-radius: 999px;
+  padding: .2rem .75rem;
+  font-size: .8rem;
+  margin: .15rem;
+  display: inline-block;
+}
+
+.ssz-icon-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.ssz-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--ssz-brown-dark);
+  background: linear-gradient(145deg, var(--ssz-yellow-soft), var(--ssz-green));
+  box-shadow: 0 8px 20px rgba(43, 28, 16, 0.15);
+  border: 3px solid #fff;
+  transition: transform .2s ease-in-out;
+}
+.ssz-icon-circle:hover {
+  transform: translateY(-6px);
+}
+.ssz-icon-circle-lg {
+  width: 96px;
+  height: 96px;
+  font-size: 2.1rem;
+  background: linear-gradient(145deg, var(--ssz-yellow), var(--ssz-green-dark));
+  color: #fff;
+}
+.ssz-icon-divider {
+  width: 40px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--ssz-brown-soft) 0, var(--ssz-brown-soft) 6px, transparent 6px, transparent 12px);
+  opacity: .6;
+}
+@media (max-width: 576px) {
+  .ssz-icon-divider { display: none; }
+}
